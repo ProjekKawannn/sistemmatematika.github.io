@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Matematika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Matematika</h1>
+
+        <div class="section">
+            <h2>Aljabar</h2>
+            <img src="8eeee8dd-4963-41a8-b8e0-a83f90aa7ea2.jpg" alt="Aljabar" class="section-image">
+            <input type="number" id="algebra-num1" placeholder="Angka Pertama">
+            <input type="number" id="algebra-num2" placeholder="Angka Kedua">
+            <select id="algebra-operation">
+                <option value="add">Penjumlahan</option>
+                <option value="subtract">Pengurangan</option>
+                <option value="multiply">Perkalian</option>
+                <option value="divide">Pembagian</option>
+            </select>
+            <button onclick="algebraOperation()">Hitung</button>
+            <div id="algebra-result"></div>
+        </div>
+
+        <div class="section">
+            <h2>Geometri</h2>
+            <img src="1a6a8f8d-38f6-4a25-b3fb-9b2ffe02d50b.jpg" alt="Geometri" class="section-image">
+            <input type="number" id="radius" placeholder="Jari-jari Lingkaran">
+            <button onclick="calculateArea()">Hitung Luas Lingkaran</button>
+            <div id="geometry-result"></div>
+        </div>
+
+        <div class="section">
+            <h2>Kalkulus</h2>
+            <img src="31ac2671-9feb-4251-a2a8-c950d34c2b32.jpg" alt="Kalkulus" class="section-image">
+            <input type="number" id="calculus-num" placeholder="Nilai x">
+            <button onclick="calculateDerivative()">Hitung Turunan f(x)=x²</button>
+            <div id="calculus-result"></div>
+        </div>
+
+        <div class="section">
+            <h2>Statistik</h2>
+            <img src="33a572d8-c81b-4e9c-9a5b-56f6501e7833.jpg" alt="Statistik" class="section-image">
+            <input type="text" id="data-set" placeholder="Masukkan data, pisahkan dengan koma">
+            <button onclick="calculateMean()">Hitung Rata-rata</button>
+            <div id="statistics-result"></div>
+        </div>
+
+        <div class="section">
+            <h2>Trigonometri</h2>
+            <img src="7be30795-679d-46f5-80fb-969d8628e7fe.jpg" alt="Trigonometri" class="section-image">
+            <input type="number" id="trigonometry-num" placeholder="Nilai sudut">
+            <select id="trigonometry-operation">
+                <option value="sin">Sinus</option>
+                <option value="cos">Kosinus</option>
+                <option value="tan">Tangen</option>
+            </select>
+            <button onclick="calculateTrigonometry()">Hitung</button>
+            <div id="trigonometry-result"></div>
+        </div>
+
+        <div class="section">
+            <h2>Ekonomi</h2>
+            <img src="84bcacfb-5c8a-48e3-8632-3e3cb0c2d553.jpg" alt="Ekonomi" class="section-image">
+            <input type="number" id="economics-num1" placeholder="Harga awal">
+            <input type="number" id="economics-num2" placeholder="Harga akhir">
+            <button onclick="calculateEconomics()">Hitung Persentase Perubahan</button>
+            <div id="economics-result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
